@@ -1,0 +1,51 @@
+route_id,route_name,origin_latitude,origin_longitude,destination_latitude,destination_longitude,distance,driving_time,public_transport,transport_modes
+1,Nibbixwoudstraat to Rijksmuseum,52.362325,4.839784,52.360729,4.885771,7.8,15,60,2
+2,Watergraafsmeer to Anne Frank Museum,52.348607,4.938539,52.375218,4.883977,6.4,16,47,2
+3,Maurice Peeterspad to Reigersbos,52.291185,4.988795,52.294869,4.973189,30.9,24,71,2
+4,Nieuve Prinsengracht to Hegeratstraat,52.365347,4.902288,52.365903,4.881555,12.2,14,43,1
+5,Oudekerk to Solitudolaan,52.375393,4.898675,52.325217,4.930409,10.6,20,26,1
+6,Madeira to OVLG,52.363512,4.937453,52.361401,4.925086,17.1,18,60,1
+7,University of AMS to Adam Lookout,52.344315,4.861299,52.377449,4.900722,10.2,16,43,2
+8,Richard Wagnerstraat to Hermitage AMS,52.343812,4.875777,52.363068,4.90735,4.5,10,49,1
+9,Amstelveen to Centraal,52.301823,4.870536,52.37981,4.90067,18.3,24,67,2
+10,Museumplein to Nieuwmarkt,52.358464,4.881506,52.372442,4.900381,4.9,12,23,1
+11,Anne Frank House to Amsterdam Arena,52.3752,4.883985,52.313216,4.943784,10.9,18,49,2
+12,Dam Square to Westerpark,52.373108,4.893729,52.385366,4.87719,6.6,12,30,2
+13,Vondelpark to Rembrandt House Museum,52.357311,4.868906,52.367641,4.901618,3.3,7,34,1
+14,Central Station to RAI Amsterdam,52.37981,4.90067,52.34043,4.893206,7.3,14,28,1
+15,Rijksmuseum to Oosterpark,52.360729,4.885771,52.35474,4.921117,3.5,10,35,1
+16,Oosterpark to Sloterdijk Station,52.35474,4.921117,52.388838,4.834491,10.7,14,44,1
+17,Nieuwe Prinsengracht to The Upside Down House,52.365347,4.902288,52.3398778,4.8928404,8.3,9,28,1
+18,Jordaan to Amsterdamse Bos,52.377116,4.883971,52.310486,4.838674,6.9,12,34,1
+19,Albert Cuyp Market to Leidseplein,52.355381,4.894417,52.36343,4.882874,2.6,8,22,1
+20,Concertgebouw to De Pijp,52.356016,4.878957,52.354604,4.89538,1.6,3,16,1
+21,The Hermitage Amsterdam to NDSM Wharf,52.366574,4.90594,52.407608,4.895248,6.5,13,35,2
+22,Oude Kerk to Zuidplein,52.374612,4.898678,52.340402,4.872922,9.2,25,18,1
+23,Westergasfabriek to Muiderpoort Station,52.385366,4.87719,52.360384,4.92947,7.3,12,36,2
+24,RAI Amsterdam to Oosterdok,52.34043,4.893206,52.373185,4.911316,19,16,16,1
+25,OLVG Hospital(East) to Beethovenstraat,52.3628,4.924129,52.341858,4.881209,7.2,10,24,2
+26,Eye Filmmuseum to Zeeburg,52.36693,4.942133,52.366462,4.950432,7,14,41,2
+27,De Pijp to Bimhuis,52.354604,4.89538,52.373376,4.910395,5.4,9,31,1
+28,Museum Het Schip to Diemen,52.385224,4.87706,52.336867,4.964352,12.4,16,36,2
+29,Buiksloterham to Amsterdam Amstel,52.402032,4.895603,52.350235,4.911467,8.9,14,40,2
+30,Rokin to IJburg,52.368469,4.889332,52.36572,4.982417,9.3,14,35,2
+31,Heineken Experience to Middenhoven,52.357192,4.892262,52.318673,4.860662,10.8,16,51,2
+32,Hortus Botanicus to Bijlmer Arena,52.36706,4.904908,52.31202,4.940661,8.6,12,21,1
+33,Pleimuiden to Artis,52.390393,4.786058,52.365944,4.916511,12.9,18,73,2
+34,De Hallen to Gelderlandplein,52.367113,4.868922,52.330524,4.877207,5.1,12,53,1
+35,Sloterpass to Brentanostraat,52.364761,4.846135,52.317179,4.945469,15,22,40,1
+36,Vrije Universiteit Amsterdam to JC AMS,52.344315,4.861299,52.312108,4.948578,17.2,8,43,1
+37,Westerpark to Centrumeiland,52.37558,4.866197,52.3547195,5.0116467,20.8,18,58,2
+38,Muziekgebouw aant IJ to Leidseplein,52.37855,4.913462,52.363857,4.882102,4.9,12,30,1
+39,Tuindorp to Schipol,52.411983,4.89328,52.308267,4.759429,23.1,20,54,3
+40,Centraal to Zaanse schans,52.37981,4.90067,52.473956,4.81716,17.1,16,45,1
+41,Van Gogh Museum to Hoofddorp,52.358426,4.881367,52.30225,4.696956,19.8,22,68,2
+42,Pythonburg to OVLG,52.373543,4.948763,52.358737,4.915049,10.9,18,58,2
+43,Royal Palace to Van Beekstraat,52.37314,4.891791,52.4287122,4.9291377,11.1,16,52,2
+44,Van Hanxleden Houwertstraat to WTC Amsterdam,52.382042,4.823705,52.340682,4.874807,9.5,14,28,2
+45,Huntum to Child Health Care,52.307787,4.96094,52.3694,4.930015,12.2,14,50,2
+46,Oudekerksplein to OVLG Oost,52.374030,4.898053,52.35838,4.916667,4.9,12,23,1
+47,Nemo Science Museum to Westwijk,52.373741,4.914944,52.281687,4.823319,21.1,26,67,2
+48,University of AMS to Beijinhof,52.344315,4.861299,52.369464,4.890367,8.1,12,16,1
+49,Verleunstraat to Winkel,52.3839574,4.8315032,52.3790988,4.8864125,5.3,12,47,1
+50,De Ruijterkade to Zaandam,52.4375952,4.834103,52.37733,4.90973,12.8,20,31,1

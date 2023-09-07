@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <style>
+        /* CSS for the navigation bar */
+        nav {
+            position: fixed; /* Fixed position at the top */
+            top: 0; /* Stick to the top of the window */
+            left: 0;
+            right: 0;
+            background-color: teal; /* Set the background color to teal blue */
+            color: white; /* Set the text color to white */
+            padding: 10px; /* Add padding to the navigation bar */
+        }
+
+        /* CSS for the page body */
+        body {
+            background-color: black; /* Set the background color to black */
+            color: white; /* Set the text color to white */
+            display: flex; /* Use flexbox for layout */
+            align-items: flex-start; /* Align content at the top */
+            justify-content: space-between; /* Space content evenly horizontally */
+            padding: 20px; /* Add padding to the body */
+            margin-top: 50px; /* Add margin to the top to push content below the navigation bar */
+        }
+
+        /* CSS for the left side (text) */
+        .left-side {
+            flex: 1; /* Make it occupy available space */
+            padding: 20px; /* Add padding to the left side */
+        }
+
+        /* CSS for the right side (embedded pages) */
+        .right-side {
+            flex: 1; /* Make it occupy available space */
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack embedded pages vertically */
+            align-items: center; /* Center embedded pages horizontally */
+            width: 100%; /* Set the width to 100% to fill the available space */
+        }
+
+        /* CSS for the embedded iframes */
+        .embedded-page {
+            width: 100%; /* Set the width to 100% to fill the right side */
+            height: 500px; /* Set the height of the embedded pages */
+            border: none; /* Remove border around iframes */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Page 1 Navigation</h1>
+    </nav>
+
+    <!-- Content -->
+    <div class="left-side">
+        <h2>Page 1 Title</h2>
+        <p>This is the content for Page 1. You can add your text content here.</p>
+    </div>
+
+    <div class="right-side">
+        <!-- Embed two pages using iframes -->
+        <iframe class="embedded-page" src="/Users/poorni/Thesis/gettingthereishalfthefun/finalcode/maps/amsterdam.html"></iframe>
+        <iframe class="embedded-page" src="/Users/poorni/Thesis/gettingthereishalfthefun/finalcode/maps/amsterdam.html"></iframe>
+    </div>
+</body>
+</html>
