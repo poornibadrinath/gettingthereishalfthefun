@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Continuous Scroll Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .page {
+      display: flex;
+      min-height: 100vh;
+      width: 100vw;
+    }
+    
+    .embed-section {
+      flex: 1;
+      background-color: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .text-section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #ffffff;
+      color: #333333;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    /* Styling for alternating the sections */
+    .page:nth-child(even) .embed-section {
+      order: 2;
+    }
+    
+    .page:nth-child(odd) .text-section {
+      order: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="embed-section">
+      <!-- Replace the URL below with your interactive map embed code -->
+      <iframe src="https://www.example.com/your-interactive-map" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="text-section">
+      <h1>Introduction</h1>
+      <p>
+        Getting There is Half the Fun is an exploration of transportation methods and their impact on our daily lives. In this study, we compare two popular transportation options: Bus Rapid Transit (BLR) and Automated Monorail System (AMS). Our goal is to gain a deeper understanding of how these systems influence the way we move and interact with our environment.
+      </p>
+    </div>
+  </div>
+  
+  <div class="page">
+    <div class="text-section">
+      <h1>Comparison of BLR and AMS</h1>
+      <p>
+        BLR and AMS are two distinct transportation systems with unique advantages and challenges. BLR focuses on providing high-capacity buses with dedicated lanes, aiming to improve public transit efficiency. On the other hand, AMS relies on automated monorails to transport passengers swiftly and safely. By comparing these two systems, we aim to highlight their strengths and limitations in different urban settings.
+      </p>
+    </div>
+    <div class="embed-section">
+      <!-- Replace the URL below with your interactive map embed code -->
+      <iframe src="https://www.example.com/your-interactive-map" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <div class="page">
+    <div class="embed-section">
+      <!-- Replace the URL below with your interactive map embed code -->
+      <iframe src="https://www.example.com/your-interactive-map" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="text-section">
+      <h1>The Transport Understanding through Space Time Cube</h1>
+      <p>
+        One of the visualization techniques used to understand transportation patterns is the Space Time Cube. This concept enables us to analyze how movements change over time and space. By visualizing travel patterns and transport flows through the Space Time Cube, we gain valuable insights into the dynamics of transportation networks and the impact on urban mobility.
+      </p>
+    </div>
+  </div>
+  
+  <!-- Add more pages as needed -->
+  
+  <script>
+    // JavaScript for continuous scroll behavior
+    window.addEventListener('wheel', function(e) {
+      if (e.deltaY > 0) {
+        window.scrollBy(0, window.innerHeight);
+      } else {
+        window.scrollBy(0, -window.innerHeight);
+      }
+      e.preventDefault();
+    });
+  </script>
+</body>
+</html>

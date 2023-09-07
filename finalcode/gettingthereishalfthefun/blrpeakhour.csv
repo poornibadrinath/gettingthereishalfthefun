@@ -1,0 +1,43 @@
+oute_id,route_name,origin_latitude,origin_longitude,destination_latitude,destination_longitude,distance,driving_time,public_transport,traffic_index,transport_modes
+1,Iskcon to Koramangala,13.0099295,77.5510424,12.937277,77.623006,15.7,82,68,Green,2
+2,KC General  to Silk board,12.996302,77.569264,12.916508,77.621199,13.2,80,60,Green,2
+3,Phoenix Market city to Sadashivanagar,12.995638,77.696144,13.007321,77.580828,20.1,70,82,Green,2
+4,Jayanagar to Manyata,12.92797,77.582962,13.043513,77.620982,18.5,85,74,Green,2
+5,World Trade Centre to Kengeri,13.011948,77.556154,12.899967,77.483105,22,100,82,Yellow,1
+6,Basaveshwarnagar to  Lalbagh,12.988811,77.534904,12.950684,77.585115,8.9,34,37,Green,2
+7,Chinnaswamy Stadium to Brookfield,12.977755,77.598836,12.959896,77.714679,14.1,80,66,Green,1
+8,Indiranagar  to KSR ,12.976348,77.643445,12.978115,77.569802,11.5,65,35,Green,1
+9,Oberoi to KIA ,12.973412,77.618163,13.198038,77.707531,35.6,140,138,Yellow,2
+10,Christ University to Hebbal,13.034926,77.597106,12.936218,77.606129,15.9,73,70,Green,2
+11,Aachar Residency to IIMB,13.014147,77.577953,12.895733,77.602172,15.7,85,64,Green,2
+12,KR Marjet to Tambu Chetty Palya,12.965617,77.57692,13.01912,77.703866,16.6,100,66,Green,1
+13,Prestige Misty Waters to DYU Art Cafe,13.046336,77.601969,12.937309,77.61757,17.5,90,77,Green,2
+14,83 1 J Cross to Ranga Shankara ,12.989753,77.534173,12.911522,77.587048,17.4,65,62,Green,2
+15,166 1 J Cross  to Apollo Hospitals,12.988977,77.53493,12.896032,77.598648,20.7,97,68,Green,2
+17,Prestige Falcon to VV Puram Food Street,12.884725,77.56343,12.950902,77.577757,8.8,50,32,Green,1
+18,Vijaynagar to Indiranagar,12.990035,77.531157,12.9812,77.640595,14.6,75,50,Green,1
+19,Kengeri to Baiyyapanahalli,12.8878374,77.4821749,12.9814225,77.6525918,19,110,78,Green,1
+20,Mattikere to Yelahanka,13.0329,77.5575,13.0997,77.5946,8.9,45,66,Green,2
+21,Yeshwanthpur to National College,13.0238,77.5529,12.9519,77.5758,7.3,70,33,Green,1
+22,Ullal to Banaswadi,12.9716,77.5004,13.0142,77.6519,25.2,100,114,Green,3
+23,Turahalli to Bangalore Palace,12.8902,77.5142,12.9982,77.5922,14,77,111,Green,3
+24,Vidyaranyapura to Banashankari,13.0769,77.5593,12.9255,77.5468,21.8,76,96,Yellow,2
+25,Kalyannagar to hosakerehalli,13.0229,77.6403,12.9158,77.5416,26.3,80,101,Green,2
+26,MG Road to Forum Mall,12.9747,77.6094,12.9352,77.6114,5.6,28,29,Green,1
+27,Hebbal to Commercial Street,13.0359,77.597,12.9821,77.6086,10.2,25,50,Green,1
+28,Cooke town to Nagawara Lake,13.0002,77.6244,13.0344,77.6265,11,42,44,Green,2
+29,Malleswaram to Majestic,13.0063,77.5684,12.9779,77.5665,4.1,26,28,Green,1
+30,Banaswadi to Chikkapete,13.0142,77.6519,12.9656,77.5784,10.7,55,41,Green,1
+31,Yelahanka to Cubbon Park,13.0995,77.5877,12.977,77.5928,20.8,75,54,Green,1
+32,Baiyyappanahalli to Yeshwanthpur ,13.0236,77.651,13.0238,77.5529,20,77,68,Green,2
+33,CV Ramam Nagar to Jalahalli ,12.9784,77.6408,13.0457,77.5482,20.7,102,97,Green,2
+34,Jayanagar to Whitefield,12.9279,77.5822,12.9911,77.7473,23.5,100,100,Green,2
+35,Vijayanagar to Electronic City ,12.9716,77.5456,12.8395,77.677,26.5,110,103,Green,2
+36,National College to Nagasandra ,12.9519,77.5758,13.0467,77.5225,19.2,80,52,Green,1
+37,Hosakerehalli to RV Road,12.9156,77.5427,12.9413,77.5637,7.1,40,45,Green,1
+38,Ashwath Nagar to HSR Layout,12.964522,77.701035,12.9095,77.6389,18.4,70,45,Green,1
+39,JP Nagar to Electronic City,12.9065,77.5858,12.8395,77.677,15.8,70,71,Green,3
+40,Malleshwaram to Kempegowda International Airport (KIA),13.0055,77.5688,13.1997,77.6936,30.5,106,97,Green,1
+41,GT World Mall to HAL 3rd Stage,12.9713289,77.6542746,12.9744223,77.56366,16.5,60,45,Green,1
+42,Vaishnavi Sapphire to St Josephs,13.024719,77.549233,12.9944449,77.5538863,13,55,46,Green,2
+43,Nagasandra to Jeevan Bhima Nagar,12.9650593,77.659114,13.0091138,77.533868,27.4,75,62,Green,2

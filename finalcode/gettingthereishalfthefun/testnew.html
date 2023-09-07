@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bengaluru Transport Network Gaps</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #map {
+      height: 100vh;
+      width: 100vw;
+    }
+    
+    .info-box {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      z-index: 1;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="info-box">
+    <h1>Transport Network Gaps in Bengaluru</h1>
+    <p>Click on the areas to view details about the gaps.</p>
+  </div>
+  
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+  
+  <script>
+    // Mapbox API access token
+    mapboxgl.accessToken = 'pk.eyJ1IjoicG9vcm5pLWJhZHJpbmF0aCIsImEiOiJjanUwbmYzc3UwdDI3NGRtZ3kzMTltbWZpIn0.SB9PEksVcEwWvZJ9A7J9uA';
+    
+    // Map initialization
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v10',
+      center: [77.5946, 12.9716], // Bengaluru coordinates
+      zoom: 12
+    });
+    
+    // Add data source (replace with your own data)
+    map.on('load', function() {
+      map.addSource('transport-gaps', {
+        type: 'geojson',
+        data: 'path/to/your/geojson/data.geojson'
+      });
+      
+      // Add layer to display gaps
+      map.addLayer({
+        id: 'transport-gaps-layer',
+        type: 'fill',
+        source: 'transport-gaps',
+        layout: {},
+        paint: {
+          'fill-color': '#ff0000',
+          'fill-opacity': 0.5
+        }
+      });
+      
+      // Add interactivity to display gap details
+      map.on('click', 'transport-gaps-layer', function(e) {
+        const features = map.queryRenderedFeatures(e.point, { layers: ['transport-gaps-layer'] });
+        
+        if (features.length > 0) {
+          const feature = features[0];
+          const properties = feature.properties;
+          
+          // Display gap details in info box
+          document.querySelector('.info-box h1').textContent = properties.name;
+          document.querySelector('.info-box p').textContent = properties.description;
+        }
+      });
+      
+      // Change cursor style when hovering over gaps
+      map.on('mouseenter', 'transport-gaps-layer', function() {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+      
+      map.on('mouseleave', 'transport-gaps-layer', function() {
+        map.getCanvas().style.cursor = '';
+      });
+    });
+  </script>
+</body>
+</html>

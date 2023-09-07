@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Animate a point along a route</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-traffic/v0.3.0/mapbox-gl-traffic.min.js"></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        .tabs {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+        .tabs button {
+            font: 600 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            background-color: #3386c0;
+            color: #fff;
+            display: inline-block;
+            margin: 0;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .tabs button:hover {
+            background-color: #4ea0da;
+        }
+        .tabs button.active {
+            background-color: #4ea0da;
+        }
+        .tabs button:disabled {
+            background: #f5f5f5;
+            color: #c3c3c3;
+        }
+        .swipe-toggle {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 120px;
+            background-color: #ccc;
+            padding: 5px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .swipe-toggle .toggle-handle {
+            width: 50%;
+            height: 100%;
+            background-color: #fff;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .swipe-toggle.active .toggle-handle {
+            transform: translateX(100%);
+        }
+        .swipe-toggle span {
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .traffic-toggle {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+            background-color: #fff;
+            padding: 5px 10px;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="tabs">
+        <button id="amsterdamTab" class="active">Amsterdam</button>
+        <button id="bangaloreTab">Bangalore</button>
+    </div>
+    <div id="swipeToggle" class="swipe-toggle">
+        <span>AMS</span>
+        <div class="toggle-handle"></div>
+        <span>BLR</span>
+    </div>
+    <div class="traffic-toggle">
+        <input type="radio" name="traffic" id="trafficOn" checked>
+        <label for="trafficOn">Traffic On</label>
+        <input type="radio" name="traffic" id="trafficOff">
+        <label for="trafficOff">Traffic Off</label>
+    </div>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicG9vcm5pLWJhZHJpbmF0aCIsImEiOiJjanUwbmYzc3UwdDI3NGRtZ3kzMTltbWZpIn0.SB9PEksVcEwWvZJ9A7J9uA';
+
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/poorni-badrinath/cli5d4n3l02m201qu8p509lbl',
+            center: [4.895, 52.370],
+            zoom: 10,
+            pitch: 40
+        });
+
+        const originAmsterdam = [4.895, 52.370];
+        const destinationAmsterdam = [4.895, 52.378];
+        const originBangalore = [77.5946, 12.9716];
+        const destinationBangalore = [77.5946, 12.9791];
+
+        const routeAmsterdam = {
+            'type': 'FeatureCollection',
+            'features': [
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [originAmsterdam, destinationAmsterdam]
+                    }
+                }
+            ]
+        };
+
+        const routeBangalore = {
+            'type': 'FeatureCollection',
+            'features': [
+                {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [originBangalore, destinationBangalore]
+                    }
+                }
+            ]
+        };
+
+        const point = {
+            'type': 'FeatureCollection',
+            'features': [
+                {
+                    'type': 'Feature',
+                    'properties': {},
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': originAmsterdam
+                    }
+                }
+            ]
+        };
+
+        const lineDistanceAmsterdam = turf.length(routeAmsterdam.features[0]);
+        const lineDistanceBangalore = turf.length(routeBangalore.features[0]);
+
+        const arcAmsterdam = [];
+        const arcBangalore = [];
+
+        const steps = 500;
+
+        for (let i = 0; i < lineDistanceAmsterdam; i += lineDistanceAmsterdam / steps) {
+            const segment = turf.along(routeAmsterdam.features[0], i);
+            arcAmsterdam.push(segment.geometry.coordinates);
+        }
+
+        for (let i = 0; i < lineDistanceBangalore; i += lineDistanceBangalore / steps) {
+            const segment = turf.along(routeBangalore.features[0], i);
+            arcBangalore.push(segment.geometry.coordinates);
+        }
+
+        routeAmsterdam.features[0].geometry.coordinates = arcAmsterdam;
+        routeBangalore.features[0].geometry.coordinates = arcBangalore;
+
+        let counter = 0;
+        let currentRoute = routeAmsterdam;
+        let currentOrigin = originAmsterdam;
+
+        map.on('load', () => {
+            map.addSource('route', {
+                'type': 'geojson',
+                'data': currentRoute
+            });
+
+            map.addSource('point', {
+                'type': 'geojson',
+                'data': point
+            });
+
+            map.addLayer({
+                'id': 'route',
+                'source': 'route',
+                'type': 'line',
+                'paint': {
+                    'line-width': 2,
+                    'line-color': '#007cbf'
+                }
+            });
+
+            map.addLayer({
+                'id': 'point',
+                'source': 'point',
+                'type': 'symbol',
+                'layout': {
+                    'icon-image': 'airport',
+                    'icon-size': 1.5,
+                    'icon-rotate': ['get', 'bearing'],
+                    'icon-rotation-alignment': 'map',
+                    'icon-allow-overlap': true,
+                    'icon-ignore-placement': true
+                }
+            });
+
+            function animate() {
+                if (counter >= steps) counter = 0;
+                point.features[0].geometry.coordinates = currentOrigin === originAmsterdam ?
+                    arcAmsterdam[counter] :
+                    arcBangalore[counter];
+
+                map.getSource('point').setData(point);
+
+                counter++;
+
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        });
+
+        map.on('load', () => {
+    // ...
+
+    ap.on('load', () => {
+            // Initialize the traffic plugin
+            const traffic = new MapboxTrafficPlugin({
+                trafficFlow: 'relative',
+                trafficIncidents: true,
+            });
+
+            // Add the traffic plugin to the map
+            map.addControl(traffic, 'bottom-left');
+
+            // Rest of your code...
+        });
+
+    const trafficOnRadio = document.getElementById('trafficOn');
+    const trafficOffRadio = document.getElementById('trafficOff');
+
+    trafficOnRadio.addEventListener('change', () => {
+        if (trafficOnRadio.checked) {
+            traffic.enable();
+        }
+    });
+
+    trafficOffRadio.addEventListener('change', () => {
+        if (trafficOffRadio.checked) {
+            traffic.disable();
+        }
+    });
+});
+
+
+        const amsterdamTab = document.getElementById('amsterdamTab');
+        const bangaloreTab = document.getElementById('bangaloreTab');
+        const swipeToggle = document.getElementById('swipeToggle');
+
+        amsterdamTab.addEventListener('click', () => {
+            if (currentOrigin !== originAmsterdam) {
+                currentRoute = routeAmsterdam;
+                currentOrigin = originAmsterdam;
+                map.getSource('route').setData(currentRoute);
+                swipeToggle.classList.remove('active');
+                map.flyTo({
+                    center: originAmsterdam,
+                    zoom: 10,
+                    speed: 1.5,
+                    curve: 1,
+                    easing: (t) => t
+                });
+            }
+        });
+
+        bangaloreTab.addEventListener('click', () => {
+            if (currentOrigin !== originBangalore) {
+                currentRoute = routeBangalore;
+                currentOrigin = originBangalore;
+                map.getSource('route').setData(currentRoute);
+                swipeToggle.classList.remove('active');
+                map.flyTo({
+                    center: originBangalore,
+                    zoom: 10,
+                    speed: 1.5,
+                    curve: 1,
+                    easing: (t) => t
+                });
+            }
+        });
+
+        swipeToggle.addEventListener('click', () => {
+            swipeToggle.classList.toggle('active');
+            if (currentOrigin === originAmsterdam) {
+                currentOrigin = originBangalore;
+                currentRoute = routeBangalore;
+                map.getSource('route').setData(currentRoute);
+                map.flyTo({
+                    center: originBangalore,
+                    zoom: 10,
+                    speed: 1.5,
+                    curve: 1,
+                    easing: (t) => t
+                });
+            } else {
+                currentOrigin = originAmsterdam;
+                currentRoute = routeAmsterdam;
+                map.getSource('route').setData(currentRoute);
+                map.flyTo({
+                    center: originAmsterdam,
+                    zoom: 10,
+                    speed: 1.5,
+                    curve: 1,
+                    easing: (t) => t
+                });
+            }
+        });
+    </script>
+</body>
+</html>

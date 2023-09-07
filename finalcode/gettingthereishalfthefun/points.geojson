@@ -1,0 +1,286 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "MG Road",
+          "destination": "Indiranagar"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6088,
+            12.9756
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Koramangala",
+          "destination": "Jayanagar"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6221,
+            12.9336
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Whitefield",
+          "destination": "Marathahalli"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.7500,
+            12.9698
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Kengeri",
+          "destination": "Rajarajeshwari Nagar"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.4846,
+            12.9085
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Electronic City",
+          "destination": "Silk Board"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6670,
+            12.8457
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Yeshwanthpur",
+          "destination": "Malleswaram"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5507,
+            13.0217
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Basavanagudi",
+          "destination": "Lalbagh"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5703,
+            12.9426
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "HSR Layout",
+          "destination": "BTM Layout"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6488,
+            12.9121
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Hebbal",
+          "destination": "Nagawara"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6069,
+            13.0359
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Bellandur",
+          "destination": "Sarjapur"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6760,
+            12.9255
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "JP Nagar",
+          "destination": "Banashankari"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5775,
+            12.9063
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Cubbon Park",
+          "destination": "Vidhana Soudha"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5913,
+            12.9767
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Ulsoor",
+          "destination": "MG Road"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6262,
+            12.9757
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Vijayanagar",
+          "destination": "Rajajinagar"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5414,
+            12.9716
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Kammanahalli",
+          "destination": "Kalyan Nagar"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6376,
+            13.0183
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Banashankari",
+          "destination": "Jayanagar"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5468,
+            12.9255
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Marathahalli",
+          "destination": "KR Puram"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6974,
+            12.9576
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Malleswaram",
+          "destination": "Yeshwanthpur"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5740,
+            13.0237
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "BTM Layout",
+          "destination": "Koramangala"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.6101,
+            12.9166
+          ]     
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "origin": "Majestic",
+          "destination": "Shivajinagar"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.5705,
+            12.9791
+          ]
+        }
+      }
+    ]
+  }
+  

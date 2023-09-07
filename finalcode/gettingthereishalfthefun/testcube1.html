@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Points in Bangalore</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+    .label {
+      position: absolute;
+      color: #000;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <script type="module">
+    import * as THREE from 'https://cdn.skypack.dev/three@0.132.2/build/three.module.js';
+    import { OrbitControls } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js';
+
+    // Create a Three.js scene
+    const scene = new THREE.Scene();
+
+    // Create a camera
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.set(0, 300, 300);
+    camera.lookAt(scene.position);
+
+    // Create a renderer
+    const renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Load Mapbox tile texture for the base plane
+    const textureLoader = new THREE.TextureLoader();
+    const mapboxTexture = textureLoader.load('https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/77.5946,12.9716,10,0,0/512x512?access_token=pk.eyJ1IjoicG9vcm5pLWJhZHJpbmF0aCIsImEiOiJjanUwbmYzc3UwdDI3NGRtZ3kzMTltbWZpIn0.SB9PEksVcEwWvZJ9A7J9uA');
+
+    // Create a base map plane
+    const planeSize = 200; // Adjust plane size
+    const planeGeometry = new THREE.PlaneGeometry(planeSize, planeSize);
+    const planeMaterial = new THREE.MeshBasicMaterial({ map: mapboxTexture });
+    const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+    plane.rotation.x = -Math.PI / 2; // Rotate the plane to make it flat
+    plane.position.y = -planeSize / 2; // Position the plane at the base
+    scene.add(plane);
+
+    // Create point materials
+    const pointMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 }); // Red color
+
+    // Define coordinates and labels for the points
+    const points = [
+      { x: 77.5817, y: 12.9893, label: 'Vidhana Soudha' }, // Vidhana Soudha
+      { x: 77.5725, y: 12.9457, label: 'KR Market' },      // KR Market
+      { x: 77.6590, y: 13.0000, label: 'Phoenix Market City' }, // Phoenix Market City (Adjusted Y-coordinate)
+      // Add more points as needed
+    ];
+
+    // Function to create a point at a specific coordinate
+function createPoint(x, y, label) {
+  const pointGeometry = new THREE.CircleGeometry(2, 8);
+  const point = new THREE.Mesh(pointGeometry, pointMaterial);
+  point.position.set(x, 2, y); // Raise the points higher
+  scene.add(point);
+
+  // Create a label element and position it above the point
+  const labelElement = document.createElement('div');
+  labelElement.textContent = label;
+  labelElement.className = 'label';
+  document.body.appendChild(labelElement);
+
+  const canvas = renderer.domElement;
+  const canvasPosition = point.position.clone().project(camera);
+  const xCoord = (canvasPosition.x + 1) / 2 * canvas.clientWidth;
+  const yCoord = (-canvasPosition.y + 1) / 2 * canvas.clientHeight;
+
+  // Adjust the label position based on canvas offset
+  labelElement.style.left = `${xCoord + canvas.offsetLeft}px`;
+  labelElement.style.top = `${yCoord + canvas.offsetTop}px`;
+}
+
+// Create points at the specified coordinates with labels
+points.forEach(point => {
+  createPoint(point.x, point.y, point.label);
+});
+
+
+    // Create orbit controls to navigate the scene
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+
+    // Render loop
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // Handle window resize
+    window.addEventListener('resize', function () {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
+</body>
+</html>

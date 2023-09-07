@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSM Space-Time Cube</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #canvas {
+      width: 100%;
+      height: 100%;
+    }
+
+    .popup {
+      position: absolute;
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="canvas"></div>
+  <div id="popup" class="popup"></div>
+
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script type="module">
+    import * as THREE from 'https://cdn.skypack.dev/three@0.132.2/build/three.module.js';
+    import {
+      OrbitControls
+    } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js';
+
+    const c = 200;
+    const minDate = new Date("2019-04-22T16:47:13Z");
+    const maxDate = new Date("2019-04-22T17:30:00Z");
+
+    const timeScale = d3.scaleTime().domain([minDate, maxDate]).range([0, c]);
+
+    function project3D(coord, t = minDate) {
+      const lon = coord[0];
+      const lat = coord[1];
+      const time = timeScale(t);
+
+      const x = ((lon - 4.895168) / 0.007441) * (c / 2);
+      const y = time - c / 2;
+      const z = ((lat - 52.370216) / 0.007441) * (c / 2);
+
+      return new THREE.Vector3(x, y, z);
+    }
+
+    // Other constants, setup, and rendering code
+
+    const data = [
+      {
+        lon: 4.895168,
+        lat: 52.370216,
+        time: new Date("2019-04-22T16:47:13Z"),
+        congestion: 0.8, // Traffic congestion value (between 0 and 1)
+        timeTaken: 0.1 // Time taken for this point
+      },
+      {
+        lon: 4.890168,
+        lat: 52.372216,
+        time: new Date("2019-04-22T17:00:00Z"),
+        congestion: 0.6,
+        timeTaken: 0.6
+      },
+      {
+        lon: 4.895568,
+        lat: 52.370216,
+        time: new Date("2019-04-22T17:15:00Z"),
+        congestion: 0.4,
+        timeTaken: 0.4
+      },
+      {
+        lon: 4.890568,
+        lat: 52.372216,
+        time: new Date("2019-04-22T17:30:00Z"),
+        congestion: 1.0,
+        timeTaken: 1.0
+      }
+      // Add more data points as needed
+    ];
+
+    // Other code for creating markers, controls, and event listeners
+  </script>
+</body>
+
+</html>
