@@ -1,0 +1,3485 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5510424,13.0099295 ]
+    },
+    "properties": {
+    "ID":1,
+    "Name":"Iskcon",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.569264,12.996302 ]
+    },
+    "properties": {
+    "ID":2,
+    "Name":"KC General",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.696144,12.995638 ]
+    },
+    "properties": {
+    "ID":3,
+    "Name":"Phoenix Market city",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.582962,12.92797 ]
+    },
+    "properties": {
+    "ID":4,
+    "Name":"Jayanagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.556154,13.011948 ]
+    },
+    "properties": {
+    "ID":5,
+    "Name":"World Trade Centre",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.598836,12.977755 ]
+    },
+    "properties": {
+    "ID":7,
+    "Name":"Chinnaswamy Stadium Brookfield",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.643445,12.976348 ]
+    },
+    "properties": {
+    "ID":8,
+    "Name":"Indiranagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.618163,12.973412 ]
+    },
+    "properties": {
+    "ID":9,
+    "Name":"Oberoi",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.597106,13.034926 ]
+    },
+    "properties": {
+    "ID":10,
+    "Name":"Hebbal",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.577953,13.014147 ]
+    },
+    "properties": {
+    "ID":11,
+    "Name":"Aachar Residency",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57692,12.965617 ]
+    },
+    "properties": {
+    "ID":12,
+    "Name":"KR Marjet",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.601969,13.046336 ]
+    },
+    "properties": {
+    "ID":13,
+    "Name":"Prestige Misty Waters",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.534173,12.989753 ]
+    },
+    "properties": {
+    "ID":14,
+    "Name":"83 1 J Cross",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.53493,12.988977 ]
+    },
+    "properties": {
+    "ID":15,
+    "Name":"166 1 J Cross",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.56343,12.884725 ]
+    },
+    "properties": {
+    "ID":17,
+    "Name":"Prestige Falcon",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.623006,12.937277 ]
+    },
+    "properties": {
+    "ID":19,
+    "Name":"Koramangala",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.621199,12.916508 ]
+    },
+    "properties": {
+    "ID":20,
+    "Name":"Silk board",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.580828,13.007321 ]
+    },
+    "properties": {
+    "ID":21,
+    "Name":"Sadashivanagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.620982,13.043513 ]
+    },
+    "properties": {
+    "ID":22,
+    "Name":"Manyata",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.483105,12.899967 ]
+    },
+    "properties": {
+    "ID":23,
+    "Name":"Kengeri",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.585115,12.950684 ]
+    },
+    "properties": {
+    "ID":24,
+    "Name":"Lalbagh",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.714679,12.959896 ]
+    },
+    "properties": {
+    "ID":25,
+    "Name":"Brookefield",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.569802,12.978115 ]
+    },
+    "properties": {
+    "ID":26,
+    "Name":"Bangalore City Junction",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.707531,13.198038 ]
+    },
+    "properties": {
+    "ID":27,
+    "Name":"Kempegowda International Airport Terminal 1",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.606129,12.936218 ]
+    },
+    "properties": {
+    "ID":28,
+    "Name":"Christ University",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.602172,12.895733 ]
+    },
+    "properties": {
+    "ID":29,
+    "Name":"Indian Institute Management, Bengaluru",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.703866,13.01912 ]
+    },
+    "properties": {
+    "ID":30,
+    "Name":"Salarpuria Sattva",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.61757,12.937309 ]
+    },
+    "properties": {
+    "ID":31,
+    "Name":"Koramangala 7th Block",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.587048,12.911522 ]
+    },
+    "properties": {
+    "ID":32,
+    "Name":"Rangashankara",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.577757,12.950902 ]
+    },
+    "properties": {
+    "ID":34,
+    "Name":"VV Puram",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.61255641,12.90435911 ]
+    },
+    "properties": {
+    "ID":35,
+    "Name":"Madivala Lake",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.49749912,12.90304553 ]
+    },
+    "properties": {
+    "ID":36,
+    "Name":"BGS Global Hospitals",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.59817367,12.93638485 ]
+    },
+    "properties": {
+    "ID":37,
+    "Name":"Kidwai Memorial Institute of Oncology",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.56847228,12.93263896 ]
+    },
+    "properties": {
+    "ID":38,
+    "Name":"Thyagarajanagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.63808814,12.95955871 ]
+    },
+    "properties": {
+    "ID":39,
+    "Name":"Domlur",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.54001516,12.96491612 ]
+    },
+    "properties": {
+    "ID":40,
+    "Name":"Attiguppe",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6287878,13.0269523 ]
+    },
+    "properties": {
+    "ID":41,
+    "Name":"Hennur",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.61310685,13.02182916 ]
+    },
+    "properties": {
+    "ID":42,
+    "Name":"Dr. Ambedkar Medical College Hospital",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.51387167,12.94103989 ]
+    },
+    "properties": {
+    "ID":43,
+    "Name":"Bangalore University",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.52738465,13.03086351 ]
+    },
+    "properties": {
+    "ID":44,
+    "Name":"Peenya Industrial Area",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5583932,13.03285822 ]
+    },
+    "properties": {
+    "ID":45,
+    "Name":"Mathikere",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.56724933,13.02131564 ]
+    },
+    "properties": {
+    "ID":46,
+    "Name":"Indian Institute of Science",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.53627711,13.01222348 ]
+    },
+    "properties": {
+    "ID":47,
+    "Name":"Nandini Layout",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.48349427,13.05063859 ]
+    },
+    "properties": {
+    "ID":48,
+    "Name":"Jindal Naturecare Institute",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.49245181,13.03435294 ]
+    },
+    "properties": {
+    "ID":49,
+    "Name":"Doddabidirakallu",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.65550039,12.96569614 ]
+    },
+    "properties": {
+    "ID":50,
+    "Name":"Kendriya Vidyalaya NAL",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.74713935,12.93929389 ]
+    },
+    "properties": {
+    "ID":51,
+    "Name":"Varthur",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.62269638,12.87094776 ]
+    },
+    "properties": {
+    "ID":52,
+    "Name":"Begur Fort",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5822929,12.86350841 ]
+    },
+    "properties": {
+    "ID":53,
+    "Name":"Jayadeva",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.55689665,12.89894354 ]
+    },
+    "properties": {
+    "ID":54,
+    "Name":"ISRO Layout",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.64759689,13.01273954 ]
+    },
+    "properties": {
+    "ID":55,
+    "Name":"Tamarind",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.62002364,12.99658735 ]
+    },
+    "properties": {
+    "ID":56,
+    "Name":"Cox Town",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.55046529,12.94198518 ]
+    },
+    "properties": {
+    "ID":57,
+    "Name":"Banashankari",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.50475587,12.99546763 ]
+    },
+    "properties": {
+    "ID":58,
+    "Name":"Sunkadakatte",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.47662537,12.9600372 ]
+    },
+    "properties": {
+    "ID":59,
+    "Name":"Ullal",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.59253892,12.9743645 ]
+    },
+    "properties": {
+    "ID":60,
+    "Name":"Cubbon Park",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.59204685,12.99857295 ]
+    },
+    "properties": {
+    "ID":61,
+    "Name":"Bengaluru Palace",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.52730718,12.88766983 ]
+    },
+    "properties": {
+    "ID":62,
+    "Name":"Turahalli",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.51469154,12.96712228 ]
+    },
+    "properties": {
+    "ID":18,
+    "Name":"Nagarabhavi",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.66327982,12.90897359 ]
+    },
+    "properties": {
+    "ID":63,
+    "Name":"Ozone Evergreen",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.55483316,12.98812758 ]
+    },
+    "properties": {
+    "ID":64,
+    "Name":"Fortis Hospitals",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57077478,12.99134812 ]
+    },
+    "properties": {
+    "ID":65,
+    "Name":"Mantri Mall",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5858217,13.09957198 ]
+    },
+    "properties": {
+    "ID":66,
+    "Name":"Yelahanka",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5026577,13.07890927 ]
+    },
+    "properties": {
+    "ID":67,
+    "Name":"Chikkabanavara",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.39622689,13.09259629 ]
+    },
+    "properties": {
+    "ID":68,
+    "Name":"Nelamangala",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57916067,13.07262349 ]
+    },
+    "properties": {
+    "ID":69,
+    "Name":"National Centre for Biological Sciences",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.58990438,12.98464307 ]
+    },
+    "properties": {
+    "ID":70,
+    "Name":"Planetarium",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.65258801,12.99652273 ]
+    },
+    "properties": {
+    "ID":33,
+    "Name":"Baiyappanahalli",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.52499813,12.92935443 ]
+    },
+    "properties": {
+    "ID":71,
+    "Name":"Rajarajeshwarinagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.61136353,12.96446959 ]
+    },
+    "properties": {
+    "ID":72,
+    "Name":"Saint Philomena's College of Nursing",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.59308734,12.96916335 ]
+    },
+    "properties": {
+    "ID":73,
+    "Name":"Sree Kanteerava Stadium",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.59623417,12.97538006 ]
+    },
+    "properties": {
+    "ID":74,
+    "Name":"Visvesvaraya Industrial and Technological Museum",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.60415488,12.97078175 ]
+    },
+    "properties": {
+    "ID":75,
+    "Name":"St Joseph's University College",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.60369562,12.96690634 ]
+    },
+    "properties": {
+    "ID":76,
+    "Name":"The Church of Jesus Christ of Latterday Saints",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.59870516,12.96590103 ]
+    },
+    "properties": {
+    "ID":77,
+    "Name":"Chancery Pavilion",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.58587837,12.97074279 ]
+    },
+    "properties": {
+    "ID":78,
+    "Name":"Saint Martha's Hospital",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57585942,12.96297367 ]
+    },
+    "properties": {
+    "ID":79,
+    "Name":"Bangalore Fort",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.56440125,12.95795551 ]
+    },
+    "properties": {
+    "ID":80,
+    "Name":"Chamarajapet",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.56295888,12.9479399 ]
+    },
+    "properties": {
+    "ID":81,
+    "Name":"Sri Gavigangadhareshwara Swamy Temple",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.56316628,12.94472081 ]
+    },
+    "properties": {
+    "ID":82,
+    "Name":"Ramaanjaneya Temple",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.56845313,12.9254268 ]
+    },
+    "properties": {
+    "ID":83,
+    "Name":"Sri Aurobindo Memorial School",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57896619,12.92579047 ]
+    },
+    "properties": {
+    "ID":84,
+    "Name":"National College",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.68785518,13.00847219 ]
+    },
+    "properties": {
+    "ID":85,
+    "Name":"ITI Cricket Ground",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.74989064,12.97187741 ]
+    },
+    "properties": {
+    "ID":86,
+    "Name":"Whitefield",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.7245382,12.9734498 ]
+    },
+    "properties": {
+    "ID":87,
+    "Name":"GE Global Research",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.67649866,12.93045474 ]
+    },
+    "properties": {
+    "ID":88,
+    "Name":"Bellandur",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.58105973,12.98958101 ]
+    },
+    "properties": {
+    "ID":89,
+    "Name":"Karnataka Chitrakala Parishath",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.58686455,12.98789407 ]
+    },
+    "properties": {
+    "ID":90,
+    "Name":"Bangalore Golf Course",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.58806792,12.98946308 ]
+    },
+    "properties": {
+    "ID":91,
+    "Name":"National Gallery of Modern Art",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.59678036,12.99140342 ]
+    },
+    "properties": {
+    "ID":92,
+    "Name":"Alliance Francaise",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.59545738,12.99246913 ]
+    },
+    "properties": {
+    "ID":93,
+    "Name":"Ambedkar Bhavan",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.58771822,12.99316222 ]
+    },
+    "properties": {
+    "ID":94,
+    "Name":"Mount Carmel College",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.58327096,13.00125665 ]
+    },
+    "properties": {
+    "ID":95,
+    "Name":"National Tuberculosis Institute",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.60510187,13.01658658 ]
+    },
+    "properties": {
+    "ID":96,
+    "Name":"Kavalbyrasandra",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57799417,13.04164353 ]
+    },
+    "properties": {
+    "ID":97,
+    "Name":"Bhoopasandra",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57153559,13.03586044 ]
+    },
+    "properties": {
+    "ID":98,
+    "Name":"Indian Space Research Organisation Vijinapura",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.56946096,13.03802784 ]
+    },
+    "properties": {
+    "ID":99,
+    "Name":"RMV Club",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.55106336,13.03497006 ]
+    },
+    "properties": {
+    "ID":100,
+    "Name":"Jayaprakash Narayan Park",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.62261833,12.94354398 ]
+    },
+    "properties": {
+    "ID":101,
+    "Name":"Koramangala Indoor Stadium",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.49650545,12.96569198 ]
+    },
+    "properties": {
+    "ID":102,
+    "Name":"Mallathahalli Lake",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.62215304,12.98499048 ]
+    },
+    "properties": {
+    "ID":103,
+    "Name":"Ulsoor Lake",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.61313925,12.99704329 ]
+    },
+    "properties": {
+    "ID":104,
+    "Name":"Frazer Town",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.59392217,13.01046899 ]
+    },
+    "properties": {
+    "ID":105,
+    "Name":"JC Nagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.55253894,13.02364609 ]
+    },
+    "properties": {
+    "ID":106,
+    "Name":"Yeshwanthpur",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.55146747,13.01994612 ]
+    },
+    "properties": {
+    "ID":107,
+    "Name":"Ullas Theatre",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.52173432,13.01055212 ]
+    },
+    "properties": {
+    "ID":108,
+    "Name":"Laggere",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.56132122,12.96544056 ]
+    },
+    "properties": {
+    "ID":109,
+    "Name":"Metro Cash and Carry",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.66256213,12.98803125 ]
+    },
+    "properties": {
+    "ID":110,
+    "Name":"DRDO Residential",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.68639224,12.98612517 ]
+    },
+    "properties": {
+    "ID":111,
+    "Name":"Kaggadasapura",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.60451378,12.9834428 ]
+    },
+    "properties": {
+    "ID":112,
+    "Name":"Bowring and Lady Curzon Hospitals",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.58504961,12.98146985 ]
+    },
+    "properties": {
+    "ID":113,
+    "Name":"Racecourse",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5848384,12.98471638 ]
+    },
+    "properties": {
+    "ID":114,
+    "Name":"Taj West End",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.53096634,12.97734063 ]
+    },
+    "properties": {
+    "ID":115,
+    "Name":"Prashanth Nagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.53637659,12.95791091 ]
+    },
+    "properties": {
+    "ID":120,
+    "Name":"Hampi Nagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.55586879,12.86177108 ]
+    },
+    "properties": {
+    "ID":116,
+    "Name":"Anjanapura",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.48624406,12.92926536 ]
+    },
+    "properties": {
+    "ID":117,
+    "Name":"Sadaran Bakers",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.49048276,12.94496448 ]
+    },
+    "properties": {
+    "ID":118,
+    "Name":"Bhuvaneshwari Nagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5437418,12.92965674 ]
+    },
+    "properties": {
+    "ID":119,
+    "Name":"NCERT",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5456056,12.92331539 ]
+    },
+    "properties": {
+    "ID":121,
+    "Name":"Ittamadu",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.54766098,12.91243577 ]
+    },
+    "properties": {
+    "ID":122,
+    "Name":"Chikkalasandra",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5576399,12.9182846 ]
+    },
+    "properties": {
+    "ID":123,
+    "Name":"Padmanabhanagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.56619574,12.90833138 ]
+    },
+    "properties": {
+    "ID":124,
+    "Name":"Dayanand Sagar Institutions",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57986829,12.89735561 ]
+    },
+    "properties": {
+    "ID":125,
+    "Name":"Sarakki Kere",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.60156129,12.87005195 ]
+    },
+    "properties": {
+    "ID":126,
+    "Name":"Hulimavu",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.60992232,12.88471989 ]
+    },
+    "properties": {
+    "ID":127,
+    "Name":"Green Orchard Apartments",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.63860724,12.88979942 ]
+    },
+    "properties": {
+    "ID":128,
+    "Name":"Purva Westend",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.65458871,12.8889248 ]
+    },
+    "properties": {
+    "ID":129,
+    "Name":"Kudlu",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.50639418,13.02579839 ]
+    },
+    "properties": {
+    "ID":130,
+    "Name":"Shivapura",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.63725368,13.02418975 ]
+    },
+    "properties": {
+    "ID":131,
+    "Name":"Kalyan Nagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.61804808,13.01607533 ]
+    },
+    "properties": {
+    "ID":132,
+    "Name":"Kushal Nagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.62897321,13.00879103 ]
+    },
+    "properties": {
+    "ID":133,
+    "Name":"Banaswadi",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.60859236,12.98255317 ]
+    },
+    "properties": {
+    "ID":134,
+    "Name":"Commercial Street",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.63245846,12.95066869 ]
+    },
+    "properties": {
+    "ID":135,
+    "Name":"ASC Golf Course",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.59971089,12.91860027 ]
+    },
+    "properties": {
+    "ID":136,
+    "Name":"Sri Jayadeva Institute of Cardiology",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.59748997,12.95111541 ]
+    },
+    "properties": {
+    "ID":137,
+    "Name":"Wilson Garden",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.58747902,12.9596085 ]
+    },
+    "properties": {
+    "ID":138,
+    "Name":"Shoonya Centre for Art",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57291742,12.94887811 ]
+    },
+    "properties": {
+    "ID":139,
+    "Name":"National College",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57353042,12.95850657 ]
+    },
+    "properties": {
+    "ID":140,
+    "Name":"Fort High School",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.59055372,12.97976885 ]
+    },
+    "properties": {
+    "ID":141,
+    "Name":"Vidhana Soudha",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5804203,12.97534436 ]
+    },
+    "properties": {
+    "ID":142,
+    "Name":"Central College Grounds",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.54743027,12.95496871 ]
+    },
+    "properties": {
+    "ID":143,
+    "Name":"Kasturi Bhai Nagar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.54600189,12.99810354 ]
+    },
+    "properties": {
+    "ID":144,
+    "Name":"MC Modi Eye Hospital",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57550074,13.0067167 ]
+    },
+    "properties": {
+    "ID":145,
+    "Name":"Chowdiah Memorial Hall",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5740631,13.01214907 ]
+    },
+    "properties": {
+    "ID":146,
+    "Name":"Sankey Tank",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.64707347,12.98693015 ]
+    },
+    "properties": {
+    "ID":147,
+    "Name":"Bengaluru Santhe",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6582368,12.99134454 ]
+    },
+    "properties": {
+    "ID":148,
+    "Name":"Big Bazaar",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.67560568,12.97764933 ]
+    },
+    "properties": {
+    "ID":149,
+    "Name":"Malleshpalya",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.67392318,13.00229093 ]
+    },
+    "properties": {
+    "ID":150,
+    "Name":"Krishnarajapuram",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.64263562,12.92401817 ]
+    },
+    "properties": {
+    "ID":151,
+    "Name":"Agara",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6405003,12.91107697 ]
+    },
+    "properties": {
+    "ID":152,
+    "Name":"HSR Layout",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.62691003,12.89422299 ]
+    },
+    "properties": {
+    "ID":153,
+    "Name":"Hongasandra",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.63701029,12.88372964 ]
+    },
+    "properties": {
+    "ID":154,
+    "Name":"Chikkabegur",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57659778,12.97407258 ]
+    },
+    "properties": {
+    "ID":155,
+    "Name":"Alankar Plaza",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.55466072,12.96557742 ]
+    },
+    "properties": {
+    "ID":156,
+    "Name":"Goripalya",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.52724846,12.97281616 ]
+    },
+    "properties": {
+    "ID":157,
+    "Name":"Kaveri Layout",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.52158037,12.90812869 ]
+    },
+    "properties": {
+    "ID":158,
+    "Name":"BEML Layout",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.48177026,12.91854797 ]
+    },
+    "properties": {
+    "ID":159,
+    "Name":"Kengeri",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.54879605,13.04643049 ]
+    },
+    "properties": {
+    "ID":160,
+    "Name":"Jalahalli",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.55115065,12.9783294 ]
+    },
+    "properties": {
+    "ID":161,
+    "Name":"Rajajinagar IT Park",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.61940359,12.95673232 ]
+    },
+    "properties": {
+    "ID":162,
+    "Name":"Austin Town",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.61771672,12.92124828 ]
+    },
+    "properties": {
+    "ID":163,
+    "Name":"Madiwala",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5670199,12.96556188 ]
+    },
+    "properties": {
+    "ID":164,
+    "Name":"Cottonpet",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6102352,13.0426237 ]
+    },
+    "properties": {
+    "ID":165,
+    "Name":"Lumbini",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.63483736,13.05547801 ]
+    },
+    "properties": {
+    "ID":166,
+    "Name":"Thanisandra",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6615771,13.02653023 ]
+    },
+    "properties": {
+    "ID":167,
+    "Name":"Horamavu",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.60140333,13.02620983 ]
+    },
+    "properties": {
+    "ID":168,
+    "Name":"Narayana Apartments",
+    "Category":"A"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.500112,13.04802 ]
+    },
+    "properties": {
+    "ID":169,
+    "Name":"Hesaraghatta Cross (Nagasandra)",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.512407,13.043338 ]
+    },
+    "properties": {
+    "ID":170,
+    "Name":"Dasarahalli",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.519698,13.039429 ]
+    },
+    "properties": {
+    "ID":171,
+    "Name":"Jalahalli",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.52544,13.03628 ]
+    },
+    "properties": {
+    "ID":172,
+    "Name":"Peenya Industry",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.533227,13.032815 ]
+    },
+    "properties": {
+    "ID":173,
+    "Name":"Peenya",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.540772,13.028383 ]
+    },
+    "properties": {
+    "ID":174,
+    "Name":"Yeshwanthpur Industry",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.549859,13.023172 ]
+    },
+    "properties": {
+    "ID":175,
+    "Name":"Yeshwanthpur",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.553933,13.014698 ]
+    },
+    "properties": {
+    "ID":176,
+    "Name":"Sandal Soap Factory",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.54881,13.008193 ]
+    },
+    "properties": {
+    "ID":177,
+    "Name":"Mahalakshmi",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.549701,13.000334 ]
+    },
+    "properties": {
+    "ID":178,
+    "Name":"Rajajinagar",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.556972,12.998523 ]
+    },
+    "properties": {
+    "ID":179,
+    "Name":"Kuvempu Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.563439,12.996461 ]
+    },
+    "properties": {
+    "ID":180,
+    "Name":"Srirampura",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.57077,12.990502 ]
+    },
+    "properties": {
+    "ID":181,
+    "Name":"Sampige Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.572967,12.975697 ]
+    },
+    "properties": {
+    "ID":182,
+    "Name":"Majestic",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.574678,12.96666 ]
+    },
+    "properties": {
+    "ID":183,
+    "Name":"Chickpet",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.574828,12.961108 ]
+    },
+    "properties": {
+    "ID":184,
+    "Name":"KR Market",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.573669,12.95059 ]
+    },
+    "properties": {
+    "ID":185,
+    "Name":"National College",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.58002,12.946408 ]
+    },
+    "properties": {
+    "ID":186,
+    "Name":"Lalbagh",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.580096,12.938377 ]
+    },
+    "properties": {
+    "ID":187,
+    "Name":"Southend Circle",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.58016,12.929641 ]
+    },
+    "properties": {
+    "ID":188,
+    "Name":"Jayanagar",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.580128,12.921464 ]
+    },
+    "properties": {
+    "ID":189,
+    "Name":"Rashtriya Vidyalaya Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.573588,12.915649 ]
+    },
+    "properties": {
+    "ID":190,
+    "Name":"Banashankari",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.573213,12.907382 ]
+    },
+    "properties": {
+    "ID":191,
+    "Name":"Jayaprakash Nagar",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.570193,12.895952 ]
+    },
+    "properties": {
+    "ID":192,
+    "Name":"Yelachenahalli",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.52971,12.946549 ]
+    },
+    "properties": {
+    "ID":193,
+    "Name":"Mysore Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.536973,12.952191 ]
+    },
+    "properties": {
+    "ID":194,
+    "Name":"Deepanjali Nagar",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.533589,12.961954 ]
+    },
+    "properties": {
+    "ID":195,
+    "Name":"Attiguppe",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.537389,12.970795 ]
+    },
+    "properties": {
+    "ID":196,
+    "Name":"Vijayanagar",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.545541,12.97424 ]
+    },
+    "properties": {
+    "ID":197,
+    "Name":"Hosahalli",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.5555,12.975633 ]
+    },
+    "properties": {
+    "ID":198,
+    "Name":"Magadi Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.566017,12.975842 ]
+    },
+    "properties": {
+    "ID":199,
+    "Name":"City Railway Station",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.583998,12.974345 ]
+    },
+    "properties": {
+    "ID":200,
+    "Name":"Sir M. Visveshwaraya",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.591752,12.978793 ]
+    },
+    "properties": {
+    "ID":201,
+    "Name":"Vidhana Soudha",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.596645,12.981227 ]
+    },
+    "properties": {
+    "ID":202,
+    "Name":"Cubbon Park",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.606762,12.975505 ]
+    },
+    "properties": {
+    "ID":203,
+    "Name":"Mahatma Gandhi Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.616984,12.973033 ]
+    },
+    "properties": {
+    "ID":204,
+    "Name":"Trinity",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.626616,12.976431 ]
+    },
+    "properties": {
+    "ID":205,
+    "Name":"Halasuru",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.638731,12.978318 ]
+    },
+    "properties": {
+    "ID":206,
+    "Name":"Indiranagar",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.64493,12.98595 ]
+    },
+    "properties": {
+    "ID":207,
+    "Name":"Swami Vivekananda Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.652504,12.990738 ]
+    },
+    "properties": {
+    "ID":208,
+    "Name":"Baiyappanahalli",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.572022,12.986532 ]
+    },
+    "properties": {
+    "ID":209,
+    "Name":"North Ramp",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.573653,12.955834 ]
+    },
+    "properties": {
+    "ID":210,
+    "Name":"South Ramp",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.600939,12.978783 ]
+    },
+    "properties": {
+    "ID":211,
+    "Name":"East Ramp",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.563474,12.975626 ]
+    },
+    "properties": {
+    "ID":212,
+    "Name":"West Ramp",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.65612,12.992118 ]
+    },
+    "properties": {
+    "ID":213,
+    "Name":"Baiyappanahalli Depot",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.532524,13.042768 ]
+    },
+    "properties": {
+    "ID":214,
+    "Name":"Peenya Depot",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6683239,12.9964994 ]
+    },
+    "properties": {
+    "ID":215,
+    "Name":"Jyothipuram",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.692534,12.996623 ]
+    },
+    "properties": {
+    "ID":216,
+    "Name":"Mahadevapura",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.703896,12.993393 ]
+    },
+    "properties": {
+    "ID":217,
+    "Name":"Gurudacharpalya",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.710515,12.988396 ]
+    },
+    "properties": {
+    "ID":218,
+    "Name":"Doddanakundi Industrial Area",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.708791,12.981041 ]
+    },
+    "properties": {
+    "ID":219,
+    "Name":"Visvesvaraya Industrial Area",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.714957,12.977701 ]
+    },
+    "properties": {
+    "ID":220,
+    "Name":"Kundalahalli",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.72394,12.97677 ]
+    },
+    "properties": {
+    "ID":221,
+    "Name":"Vydehi Hospital",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.727703,12.981848 ]
+    },
+    "properties": {
+    "ID":222,
+    "Name":"Sri Satya Sai Hospital",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.738169,12.98768 ]
+    },
+    "properties": {
+    "ID":223,
+    "Name":"ITPL",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.74651,12.985824 ]
+    },
+    "properties": {
+    "ID":224,
+    "Name":"Kadugodi",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.757732,12.993819 ]
+    },
+    "properties": {
+    "ID":225,
+    "Name":"Whitefield",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.525598,12.942479 ]
+    },
+    "properties": {
+    "ID":226,
+    "Name":"Nayandahalli",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.519593,12.936662 ]
+    },
+    "properties": {
+    "ID":227,
+    "Name":"Rajarajeshwari Nagar",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.512182,12.935423 ]
+    },
+    "properties": {
+    "ID":228,
+    "Name":"Bangalore University",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.498288,12.924326 ]
+    },
+    "properties": {
+    "ID":229,
+    "Name":"Pattanagere",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.48731,12.914962 ]
+    },
+    "properties": {
+    "ID":230,
+    "Name":"Mailasandra",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.476466,12.907963 ]
+    },
+    "properties": {
+    "ID":231,
+    "Name":"Kengeri*",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.462701,12.897934 ]
+    },
+    "properties": {
+    "ID":232,
+    "Name":"Challegatta*",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.4914,13.05126 ]
+    },
+    "properties": {
+    "ID":233,
+    "Name":"Manjunathanagar*",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.483042,13.054155 ]
+    },
+    "properties": {
+    "ID":234,
+    "Name":"Jindal*",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.472775,13.057437 ]
+    },
+    "properties": {
+    "ID":235,
+    "Name":"BIEC*",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.562602,12.888872 ]
+    },
+    "properties": {
+    "ID":236,
+    "Name":"Anjanapura Cross Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.552683,12.884636 ]
+    },
+    "properties": {
+    "ID":237,
+    "Name":"Krishna Leela Park",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.544739,12.877513 ]
+    },
+    "properties": {
+    "ID":238,
+    "Name":"Vajrahalli",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.538398,12.871395 ]
+    },
+    "properties": {
+    "ID":239,
+    "Name":"Thalgattapura",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.529868,12.861809 ]
+    },
+    "properties": {
+    "ID":240,
+    "Name":"Anjanapura Township",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.588324,12.917184 ]
+    },
+    "properties": {
+    "ID":241,
+    "Name":"Ragigudda",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.599925,12.91675 ]
+    },
+    "properties": {
+    "ID":242,
+    "Name":"Jayadeva Hospital",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.608238,12.916584 ]
+    },
+    "properties": {
+    "ID":243,
+    "Name":"BTM Layout",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.62638,12.911032 ]
+    },
+    "properties": {
+    "ID":244,
+    "Name":"HSR Layout",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.632044,12.901631 ]
+    },
+    "properties": {
+    "ID":245,
+    "Name":"Oxford College",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.639233,12.889923 ]
+    },
+    "properties": {
+    "ID":246,
+    "Name":"Muneshwara Nagar",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.645327,12.880055 ]
+    },
+    "properties": {
+    "ID":247,
+    "Name":"Chikkabegur",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.65259,12.87054 ]
+    },
+    "properties": {
+    "ID":248,
+    "Name":"Basapura Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.658416,12.863205 ]
+    },
+    "properties": {
+    "ID":249,
+    "Name":"Hosa Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.663544,12.856689 ]
+    },
+    "properties": {
+    "ID":250,
+    "Name":"Electronic City-I",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.671114,12.846783 ]
+    },
+    "properties": {
+    "ID":251,
+    "Name":"Electronic City-II",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.67724,12.839366 ]
+    },
+    "properties": {
+    "ID":252,
+    "Name":"Huskur Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.681612,12.828393 ]
+    },
+    "properties": {
+    "ID":253,
+    "Name":"Hebbagodi",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.68747,12.820364 ]
+    },
+    "properties": {
+    "ID":254,
+    "Name":"Bommasandra",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.592326,12.867493 ]
+    },
+    "properties": {
+    "ID":255,
+    "Name":"Gottigere*",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.596237,12.882942 ]
+    },
+    "properties": {
+    "ID":256,
+    "Name":"Hulimavu*",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.600244,12.897813 ]
+    },
+    "properties": {
+    "ID":257,
+    "Name":"IIM-Bangalore*",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.601049,12.906755 ]
+    },
+    "properties": {
+    "ID":258,
+    "Name":"JP Nagar 4th Phase*",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.600405,12.927377 ]
+    },
+    "properties": {
+    "ID":259,
+    "Name":"Swagath Road Cross",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.602449,12.940866 ]
+    },
+    "properties": {
+    "ID":260,
+    "Name":"Dairy Circle",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.603141,12.949597 ]
+    },
+    "properties": {
+    "ID":261,
+    "Name":"MICO Industries",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.606027,12.956822 ]
+    },
+    "properties": {
+    "ID":262,
+    "Name":"Langford Town",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.607004,12.965301 ]
+    },
+    "properties": {
+    "ID":263,
+    "Name":"Vellara Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.608318,12.976075 ]
+    },
+    "properties": {
+    "ID":264,
+    "Name":"MG Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.602181,12.983712 ]
+    },
+    "properties": {
+    "ID":265,
+    "Name":"Shivaji Nagar",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.606306,12.991794 ]
+    },
+    "properties": {
+    "ID":266,
+    "Name":"Cantonment",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.609739,13.000836 ]
+    },
+    "properties": {
+    "ID":267,
+    "Name":"Pottery Town",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.613576,13.008942 ]
+    },
+    "properties": {
+    "ID":268,
+    "Name":"Tannery Road",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.618181,13.017422 ]
+    },
+    "properties": {
+    "ID":269,
+    "Name":"Venkateshpura",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.620098,13.027521 ]
+    },
+    "properties": {
+    "ID":270,
+    "Name":"Arabic College",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.624754,13.040939 ]
+    },
+    "properties": {
+    "ID":271,
+    "Name":"Nagawara",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.601219,12.934485 ]
+    },
+    "properties": {
+    "ID":272,
+    "Name":"Dairy Circle South Ramp",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.626962,13.044981 ]
+    },
+    "properties": {
+    "ID":273,
+    "Name":"Nagawara North Ramp",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.461681,12.898995 ]
+    },
+    "properties": {
+    "ID":274,
+    "Name":"Challegatta Depot",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.751253,12.986242 ]
+    },
+    "properties": {
+    "ID":275,
+    "Name":"Whitefield Depot",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.588818,12.878183 ]
+    },
+    "properties": {
+    "ID":276,
+    "Name":"Kothanur Depot",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.678586,12.82856 ]
+    },
+    "properties": {
+    "ID":277,
+    "Name":"Hebbagodi Depot",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6208328,12.9166869 ]
+    },
+    "properties": {
+    "ID":278,
+    "Name":"Central Silkboard",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6330799,12.9164334 ]
+    },
+    "properties": {
+    "ID":279,
+    "Name":"HSR Layout",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6428377,12.9195707 ]
+    },
+    "properties": {
+    "ID":280,
+    "Name":"Agara Lake",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6659583,12.9210189 ]
+    },
+    "properties": {
+    "ID":281,
+    "Name":"Ibbalur",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6808715,12.928067 ]
+    },
+    "properties": {
+    "ID":282,
+    "Name":"Bellandur",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6908869,12.9352717 ]
+    },
+    "properties": {
+    "ID":283,
+    "Name":"Kadubeesanahalli",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6974073,12.9431244 ]
+    },
+    "properties": {
+    "ID":284,
+    "Name":"Kodibisanahalli",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.7004624,12.9542496 ]
+    },
+    "properties": {
+    "ID":285,
+    "Name":"Marathahalli",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.7017819,12.9677895 ]
+    },
+    "properties": {
+    "ID":286,
+    "Name":"ISRO",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6975012,12.9750348 ]
+    },
+    "properties": {
+    "ID":287,
+    "Name":"Doddanakundi",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.692802,12.9827923 ]
+    },
+    "properties": {
+    "ID":288,
+    "Name":"DRDO Sports Complex",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.685442,12.9939471 ]
+    },
+    "properties": {
+    "ID":289,
+    "Name":"Mahadevpura",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6774275,13.0001332 ]
+    },
+    "properties": {
+    "ID":290,
+    "Name":"KR Puram",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.6245462,12.9176234 ]
+    },
+    "properties": {
+    "ID":291,
+    "Name":"Central Silkboard",
+    "Category":"B"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.71049422,13.19805509 ]
+    },
+    "properties": {
+    "ID":292,
+    "Name":"Kempegowda International Airport, Bengaluru",
+    "Category":"B"
+    }
+  }
+]
+}

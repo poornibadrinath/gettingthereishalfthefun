@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Space-Time Cube with OSM Base Map, Points, and Animated Route</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+    .axis-label {
+      position: absolute;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+    }
+    .axis-label.x {
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 5px;
+    }
+    .axis-label.y {
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .axis-label.z {
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .popup {
+      position: absolute;
+      background-color: #ffffff;
+      color: #000000;
+      padding: 5px;
+      border-radius: 5px;
+      pointer-events: none;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <script type="module">
+    import * as THREE from 'https://cdn.skypack.dev/three@0.135.0/build/three.module.js';
+    import { OrbitControls } from 'https://cdn.skypack.dev/three@0.135.0/examples/jsm/controls/OrbitControls.js';
+
+    // Create a Three.js scene
+    const scene = new THREE.Scene();
+
+    // Create a camera
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.set(0, 0, 200);
+    camera.lookAt(scene.position);
+
+    // Create a renderer
+    const renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Create OrbitControls
+    const controls = new OrbitControls(camera, renderer.domElement);
+
+    // Load Mapbox tile texture
+    const textureLoader = new THREE.TextureLoader();
+    const texture = textureLoader.load('https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/77.6203,12.9561,12,0,0/1024x1024?access_token=pk.eyJ1IjoicG9vcm5pLWJhZHJpbmF0aCIsImEiOiJjanUwbmYzc3UwdDI3NGRtZ3kzMTltbWZpIn0.SB9PEksVcEwWvZJ9A7J9uA');
+
+    // Create a parent object
+    const parent = new THREE.Object3D();
+
+    // Create a cube container
+    const cubeContainer = new THREE.Object3D();
+    parent.add(cubeContainer);
+
+    // Create a cube geometry
+    const cubeSize = 150;
+    const cubeGeometry = new THREE.BoxGeometry(cubeSize, cubeSize, cubeSize);
+    const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000, transparent: true, opacity: 0.2 });
+    const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+    cubeContainer.add(cube);
+
+    // Create a base map plane
+    const planeSize = 150;
+    const planeGeometry = new THREE.PlaneGeometry(planeSize, planeSize);
+    planeGeometry.rotateX(-Math.PI / 2); // Rotate the plane by 90 degrees around the X-axis
+    const planeMaterial = new THREE.MeshBasicMaterial({ map: texture });
+    const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+    plane.position.y = -cubeSize / 2; // Position the plane at the bottom of the cube
+    cubeContainer.add(plane);
+
+    // Create axis labels
+    const axisLabels = ['X', 'Y', 'Z'];
+    const labelMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
+    const labelSize = 10;
+    const labelDistance = 75;
+
+    axisLabels.forEach((labelText, index) => {
+      const labelGeometry = new THREE.TextGeometry(labelText, { font: 'helvetiker' });
+      const label = new THREE.Mesh(labelGeometry, labelMaterial);
+      label.position.set(
+        index === 0 ? labelDistance : 0,
+        index === 1 ? labelDistance : 0,
+        index === 2 ? labelDistance : 0
+      );
+      label.scale.set(labelSize, labelSize, labelSize);
+      label.position.z = -cubeSize / 2;
+      label.name = `axis-label-${labelText.toLowerCase()}`;
+      parent.add(label);
+    });
+
+    // Create a curve for the route
+const routeCurve = new THREE.CatmullRomCurve3([
+  new THREE.Vector3(77.577662, 12.929524, 10),   // Point 1: Bengaluru
+  new THREE.Vector3(77.647854, 12.954119, 20),   // Point 2
+  new THREE.Vector3(77.64733, 12.954414, 30),   // Point 3
+  new THREE.Vector3(77.5666, 12.9385, 40),   // Point 4
+  new THREE.Vector3(77.5747, 12.9242, 50),   // Point 5
+  new THREE.Vector3(77.5954, 12.9195, 60),   // Point 6
+  new THREE.Vector3(77.6103, 12.9309, 70),   // Point 7
+  new THREE.Vector3(77.6205, 12.9455, 80),   // Point 8
+]);
+
+// Create the points along the curve
+const points = routeCurve.getPoints(7);
+
+    // Create the route tube geometry
+    const routeTubeRadius = 3;
+    const routeTubeSegments = 64;
+    const routeTubeGeometry = new THREE.TubeGeometry(routeCurve, routeTubeSegments, routeTubeRadius);
+    const routeTubeMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const routeTube = new THREE.Mesh(routeTubeGeometry, routeTubeMaterial);
+    cubeContainer.add(routeTube);
+
+    // Create popup element
+    const popup = document.createElement('div');
+    popup.classList.add('popup');
+    document.body.appendChild(popup);
+
+    // Function to update the route based on traffic time
+    function updateRoute(trafficTime) {
+      const percent = trafficTime / 60; // Normalize the time to a percentage between 0 and 1
+      const point = routeCurve.getPointAt(percent);
+      routeTube.position.copy(point);
+    }
+
+    // Function to handle route click event
+    function handleRouteClick(event) {
+      const rect = renderer.domElement.getBoundingClientRect();
+      const canvasX = event.clientX - rect.left;
+      const canvasY = event.clientY - rect.top;
+
+      const mouse = new THREE.Vector2();
+      mouse.x = (canvasX / renderer.domElement.clientWidth) * 2 - 1;
+      mouse.y = -(canvasY / renderer.domElement.clientHeight) * 2 + 1;
+
+      const raycaster = new THREE.Raycaster();
+      raycaster.setFromCamera(mouse, camera);
+      const intersects = raycaster.intersectObject(routeTube);
+
+      if (intersects.length > 0) {
+        const intersection = intersects[0];
+        const position = intersection.point;
+
+        // Get latitude and longitude from the clicked point
+        const latitude = position.y;
+        const longitude = position.x;
+
+        // Get the percentage of the clicked point along the route
+        const percent = routeCurve.getUtoTmapping(intersection.u).y;
+
+        // Calculate the time based on the percentage
+        const totalTime = 60; // Total time in minutes
+        const time = percent * totalTime;
+
+        // Display the latitude, longitude, and time in the popup
+        popup.textContent = `Latitude: ${latitude.toFixed(6)}, Longitude: ${longitude.toFixed(6)}, Time: ${time.toFixed(2)} minutes`;
+        popup.style.left = `${event.clientX}px`;
+        popup.style.top = `${event.clientY}px`;
+        popup.style.display = 'block';
+
+        setTimeout(() => {
+          popup.style.display = 'none';
+        }, 2000);
+      }
+    }
+
+    // Add event listener to handle route click
+    renderer.domElement.addEventListener('click', handleRouteClick);
+
+    // Add parent object to the scene
+    scene.add(parent);
+
+    // Animate function
+    function animate() {
+      requestAnimationFrame(animate);
+      renderer.render(scene, camera);
+      controls.update();
+    }
+
+    // Call the animate function
+    animate();
+  </script>
+</body>
+</html>
