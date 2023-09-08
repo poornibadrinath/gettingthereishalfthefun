@@ -9,7 +9,7 @@ This research also tries to highlight the importance of maps as a tool for under
 Cities: 
 
 <img width="1037" alt="image" src="https://github.com/poornibadrinath/gettingthereishalfthefun/assets/17887418/c5fe7cd3-7668-483b-b3cb-9c34931ec171">
-_Map Style: Mapbox @bepoorni_
+Map Style: Mapbox @bepoorni
 
 <img width="990" alt="image" src="https://github.com/poornibadrinath/gettingthereishalfthefun/assets/17887418/384aa5b1-0b8c-40df-b57a-ef0a3bdeb2c2">
-_Map Style: Mapbox @bepoorni_
+Map Style: Mapbox @bepoorni
