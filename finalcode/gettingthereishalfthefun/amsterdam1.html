@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Display buildings in 3D with Mapbox Directions and Toggle Layers</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+  <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+  <style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    .toggle { position: absolute; top: 10px; left: 10px; background-color: #fff; padding: 10px; z-index: 1; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="toggle">
+    <button id="bus" onclick="toggleLayer('gvb-bus')">Bus</button>
+    <button id="tram" onclick="toggleLayer('gvb-tram')">Tram</button>
+    <button id="ferry" onclick="toggleLayer('gvb-ferry')">Ferry</button>
+  </div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoicG9vcm5pLWJhZHJpbmF0aCIsImEiOiJjanUwbmYzc3UwdDI3NGRtZ3kzMTltbWZpIn0.SB9PEksVcEwWvZJ9A7J9uA';
+    const map = new mapboxgl.Map({
+      // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+      style: 'mapbox://styles/poorni-badrinath/clkkdd0eq00fd01qy03s15boh',
+      center: [4.89264, 52.37277],
+      zoom: 15.5,
+      pitch: 45,
+      bearing: -17.6,
+      container: 'map',
+      antialias: true
+    });
+
+    map.on('load', () => {
+      // Add the Mapbox Directions control
+      const directions = new MapboxDirections({
+        accessToken: mapboxgl.accessToken
+      });
+
+      map.addControl(directions, 'top-right');
+    });
+
+    function toggleLayer(layer) {
+      const busButton = document.querySelector('#bus');
+      const tramButton = document.querySelector('#tram');
+      const ferryButton = document.querySelector('#ferry');
+
+
+      if (layer === 'gvb-bus') {
+        busButton.classList.add('active');
+        tramButton.classList.remove('active');
+        ferryButton.classList.remove('active');
+        map.setLayoutProperty('gvb-tram', 'visibility', 'none');
+        map.setLayoutProperty('gvb-ferry', 'visibility', 'none');
+        map.setLayoutProperty('gvb-bus', 'visibility', 'visible');
+      } else if (layer === 'gvb-tram') {
+        busButton.classList.remove('active');
+        tramButton.classList.add('active');
+        ferryButton.classList.remove('active');
+        map.setLayoutProperty('gvb-bus', 'visibility', 'none');
+        map.setLayoutProperty('gvb-ferry', 'visibility', 'none');
+        map.setLayoutProperty('gvb-tram', 'visibility', 'visible');
+      } else if (layer === 'gvb-ferry') {
+        busButton.classList.remove('active');
+        tramButton.classList.remove('active');
+        ferryButton.classList.add('active');
+        map.setLayoutProperty('gvb-bus', 'visibility', 'none');
+        map.setLayoutProperty('gvb-tram', 'visibility', 'none');
+        map.setLayoutProperty('gvb-ferry', 'visibility', 'visible');
+      }
+    }
+
+    map.on('click', 'gvb-bus', (e) => {
+      const feature = e.features[0];
+      const coordinates = e.lngLat;
+
+      // Show the label for the clicked feature
+      new mapboxgl.Popup()
+        .setLngLat(coordinates)
+        .setHTML('<h3>' + feature.properties.name + '</h3>')
+        .addTo(map);
+    });
+
+    map.on('click', 'gvb-tram', (e) => {
+      const feature = e.features[0];
+      const coordinates = e.lngLat;
+
+      // Show the label for the clicked feature
+      new mapboxgl.Popup()
+        .setLngLat(coordinates)
+        .setHTML('<h3>' + feature.properties.name + '</h3>')
+        .addTo(map);
+    });
+
+    map.on('click', 'gvb-ferry', (e) => {
+      const feature = e.features[0];
+      const coordinates = e.lngLat;
+
+      // Show the label for the clicked feature
+      new mapboxgl.Popup()
+        .setLngLat(coordinates)
+        .setHTML('<h3>' + feature.properties.name + '</h3>')
+        .addTo(map);
+    });
+
+    map.on('click', (e) => {
+      const busButton = document.getElementById('bus');
+      const tramButton = document.getElementById('tram');
+      const ferryButton = document.getElementById('ferry');
+
+      busButton.classList.remove('active');
+      tramButton.classList.remove('active');
+      ferryButton.classList.remove('active');
+    });
+
+    map.on('click', (e) => {
+      const busButton = document.getElementById('bus');
+      const tramButton = document.getElementById('tram');
+      const ferryButton = document.getElementById('ferry');
+
+      const busLayers = ['gvb-bus', 'gvb-tram', 'gvb-ferry'];
+
+      if (!busButton.classList.contains('active') &&
+          !tramButton.classList.contains('active') &&
+          !ferryButton.classList.contains('active')) {
+        return;
+      }
+
+      const features = map.queryRenderedFeatures(e.point, { layers: busLayers });
+
+      if (features.length > 0) {
+        const feature = features[0];
+        const coordinates = e.lngLat;
+
+        // Show the label for the clicked feature
+        new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML('<h3>' + feature.properties.name + '</h3>')
+          .addTo(map);
+      }
+    });
+
+    map.on('load', () => {
+      // Add Tilesets as sources
+      map.addSource('gvb-bus', {
+        type: 'vector',
+        url: 'mapbox://poorni-badrinath.8z4db8j5'
+      });
+
+      map.addSource('gvb-tram', {
+        type: 'vector',
+        url: 'mapbox://poorni-badrinath.0yg7dosu'
+      });
+
+      map.addSource('gvb-ferry', {
+        type: 'vector',
+        url: 'mapbox://poorni-badrinath.aac9i4un'
+      });
+
+      // Add layers for each source
+      map.addLayer({
+        id: 'gvb-bus',
+        type: 'line',
+        source: 'gvb-bus',
+        'source-layer': 'busroutesGVB-b06iek',
+        paint: {
+          'line-color': [
+            'case',
+            ['boolean', ['feature-state', 'clicked'], false],
+            '#0000ff', // Change color to blue when clicked
+            '#FA7921' // Default color
+          ],
+          'line-width': 3
+        },
+        layout: {
+          'line-join': 'round',
+          'line-cap': 'round'
+        },
+        visibility: 'visible'
+      });
+
+      map.addLayer({
+        id: 'gvb-tram',
+        type: 'line',
+        source: 'gvb-tram',
+        'source-layer': 'amstrams-6qkxz9',
+        paint: {
+          'line-color': [
+            'case',
+            ['boolean', ['feature-state', 'clicked'], false],
+            '#0000ff', // Change color to blue when clicked
+            '#B6465F' // Default color
+          ],
+          'line-width': 3
+        },
+        layout: {
+          'line-join': 'round',
+          'line-cap': 'round'
+        },
+        visibility: 'none'
+      });
+
+      map.addLayer({
+        id: 'gvb-ferry',
+        type: 'line',
+        source: 'gvb-ferry',
+        'source-layer': 'ferryams-afgetq',
+        paint: {
+          'line-color': [
+            'case',
+            ['boolean', ['feature-state', 'clicked'], false],
+            '#0000ff', // Change color to blue when clicked
+            '#377771' // Default color
+          ],
+          'line-width': 3
+        },
+        layout: {
+          'line-join': 'round',
+          'line-cap': 'round'
+        },
+        visibility: 'none'
+      });
+
+      // The 'building' layer in the Mapbox Streets
+      // vector tileset contains building height data
+      // from OpenStreetMap.
+      map.addLayer(
+        {
+          'id': 'add-3d-buildings',
+          'source': 'composite',
+          'source-layer': 'building',
+          'filter': ['==', 'extrude', 'true'],
+          'type': 'fill-extrusion',
+          'minzoom': 15,
+          'paint': {
+            'fill-extrusion-color': '#E8DDE8',
+            'fill-extrusion-height': [
+              'interpolate',
+              ['linear'],
+              ['zoom'],
+              15,
+              0,
+              15.05,
+              ['get', 'height']
+            ],
+            'fill-extrusion-base': [
+              'interpolate',
+              ['linear'],
+              ['zoom'],
+              15,
+              0,
+              15.05,
+              ['get', 'min_height']
+            ],
+            'fill-extrusion-opacity': 0
+          }
+        }
+      );
+    });
+  </script>
+</body>
+</html>

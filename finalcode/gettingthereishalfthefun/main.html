@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Continuous Scrollable Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* CSS Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation bar */
+    .navbar {
+      background-color: #000000;
+      padding: 10px;
+      margin-bottom: 10px; /* Add a gap below the navbar */
+    }
+
+    .navbar-logo {
+      font-weight: bold;
+    }
+
+    .navbar-links a {
+      margin-right: 10px;
+      text-decoration: none;
+    }
+
+    /* Fullscreen container */
+    .container {
+      display: flex;
+      height: calc(100vh - 60px); /* Subtract the height of the navbar and the gap */
+    }
+
+    /* Left column */
+    .left-column {
+      flex: 1;
+      background-color: #f2f2f2;
+      overflow: hidden;
+      margin-top: 70px;
+      margin-right: 10px; /* Add a gap between the two map embeds */
+    }
+
+    /* Right column */
+    .right-column {
+      flex: 1;
+      background-color: #f9f9f9;
+      overflow: hidden;
+      margin-top: 70px;
+    }
+
+    /* Map iframe */
+    .map-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="navbar-logo">Getting There is Half the Fun</div>
+    <div class="navbar-links">
+      <a href="main1.html" target="_blank">Transport Systems</a>
+      <a href="ams.html" target="_blank">AMS</a>
+      <a href="blr.html" target="_blank">BLR</a>
+      <a href="analysis.html" target="_blank">Analysis</a>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+<div class="container">
+    <!-- Left column -->
+    <div class="left-column">
+      <!-- Embed for AMS space-time cube -->
+      <iframe class="map-iframe" src="https://poornibadrinath.github.io/spacetimecube/indexams.html" allowfullscreen=""></iframe>
+    </div>
+  
+    <!-- Right column -->
+    <div class="right-column">
+      <!-- Embed for BLR space-time cube -->
+      <iframe class="map-iframe" src="https://poornibadrinath.github.io/spacetimecube/indexblr.html" allowfullscreen=""></iframe>
+    </div>
+  </div>
+  
+  <!-- JavaScript code -->
+  <script>
+    // Smooth scrolling to section on click
+
+    // ...
+  </script>
+</body>
+</html>

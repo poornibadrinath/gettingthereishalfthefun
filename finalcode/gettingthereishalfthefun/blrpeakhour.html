@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animate multiple routes</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+<style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<style>
+    .overlay {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .overlay button {
+        font: 600 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        background-color: #3386c0;
+        color: #fff;
+        display: inline-block;
+        margin: 0;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .overlay button:hover {
+        background-color: #4ea0da;
+    }
+
+    .overlay button:disabled {
+        background: #f5f5f5;
+        color: #c3c3c3;
+    }
+</style>
+<script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+<div id="map"></div>
+<div class="overlay">
+    <button id="replay">Replay</button>
+</div>
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoicG9vcm5pLWJhZHJpbmF0aCIsImEiOiJjanUwbmYzc3UwdDI3NGRtZ3kzMTltbWZpIn0.SB9PEksVcEwWvZJ9A7J9uA';
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v11',
+        center: [12.4, 77.8],
+        zoom: 3,
+        pitch: 40
+    });
+
+    let routes = []; // An array to hold all the routes
+    let routeSources = [];
+    let pointSources = [];
+    let currentRouteIndex = 0;
+
+    const trafficIndexColorMap = {
+        'green': 'green',
+        'yellow': 'yellow',
+        'red': 'red'
+    };
+
+    // Fetch the CSV data
+    fetch('bengalurupeakhour.csv')
+        .then(response => response.text())
+        .then(data => {
+            const parsedData = Papa.parse(data, { header: true }).data;
+            if (parsedData.length > 0) {
+                routes = parsedData.map(route => {
+                    const origin = [parseFloat(route.origin_longitude), parseFloat(route.origin_latitude)];
+                    const destination = [parseFloat(route.destination_longitude), parseFloat(route.destination_latitude)];
+                    const color = trafficIndexColorMap[route.traffic_index.toLowerCase()];
+
+                    const routeLine = {
+                        'type': 'FeatureCollection',
+                        'features': [
+                            {
+                                'type': 'Feature',
+                                'geometry': {
+                                    'type': 'LineString',
+                                    'coordinates': [origin, destination]
+                                },
+                                'properties': {
+                                    'traffic_index': color
+                                }
+                            }
+                        ]
+                    };
+
+                    const lineDistance = turf.length(routeLine.features[0]);
+
+                    const arc = [];
+                    const steps = 500;
+
+                    for (let i = 0; i < lineDistance; i += lineDistance / steps) {
+                        const segment = turf.along(routeLine.features[0], i);
+                        arc.push(segment.geometry.coordinates);
+                    }
+
+                    routeLine.features[0].geometry.coordinates = arc;
+                    return routeLine;
+                });
+
+                shuffleArray(routes);
+
+                routes.forEach((route, index) => {
+                    const routeSourceName = `route-${index}`;
+                    const pointSourceName = `point-${index}`;
+
+                    map.addSource(routeSourceName, {
+                        'type': 'geojson',
+                        'data': route
+                    });
+
+                    map.addSource(pointSourceName, {
+                        'type': 'geojson',
+                        'data': {
+                            'type': 'FeatureCollection',
+                            'features': [
+                                {
+                                    'type': 'Feature',
+                                    'properties': {},
+                                    'geometry': {
+                                        'type': 'Point',
+                                        'coordinates': route.features[0].geometry.coordinates[0]
+                                    }
+                                }
+                            ]
+                        }
+                    });
+
+                    map.addLayer({
+                        'id': `route-${index}`,
+                        'source': routeSourceName,
+                        'type': 'line',
+                        'paint': {
+                            'line-width': 2,
+                            'line-color': ['get', 'traffic_index'],
+                            'line-opacity': 0.8
+                        },
+                        'layout': {
+                            'visibility': index === currentRouteIndex ? 'visible' : 'none'
+                        }
+                    });
+
+                    map.addLayer({
+                        'id': `point-${index}`,
+                        'source': pointSourceName,
+                        'type': 'symbol',
+                        'layout': {
+                            'icon-image': 'car',
+                            'icon-size': 1.5,
+                            'icon-rotate': ['get', 'bearing'],
+                            'icon-rotation-alignment': 'map',
+                            'icon-allow-overlap': true,
+                            'icon-ignore-placement': true,
+                            'visibility': index === currentRouteIndex ? 'visible' : 'none'
+                        }
+                    });
+
+                    routeSources.push(routeSourceName);
+                    pointSources.push(pointSourceName);
+                });
+
+                animate(currentRouteIndex);
+
+                document.getElementById('replay').addEventListener('click', () => {
+                    currentRouteIndex = Math.floor(Math.random() * routes.length);
+                    routeSources.forEach(source => {
+                        map.setLayoutProperty(source, 'visibility', 'none');
+                    });
+                    pointSources.forEach(source => {
+                        map.setLayoutProperty(source, 'visibility', 'none');
+                    });
+                    map.setLayoutProperty(routeSources[currentRouteIndex], 'visibility', 'visible');
+                    map.setLayoutProperty(pointSources[currentRouteIndex], 'visibility', 'visible');
+                    counter = 0;
+                    animate(currentRouteIndex);
+                });
+            } else {
+                console.error('No data found in the CSV.');
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching or parsing CSV data:', error);
+        });
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    let counter = 0;
+    let running = false;
+    const steps = 500;
+
+    function animate(routeIndex) {
+        if (running) return;
+        running = true;
+        document.getElementById('replay').disabled = true;
+
+        const currentRouteSource = routeSources[routeIndex];
+        const currentPointSource = pointSources[routeIndex];
+
+        function animatePoint() {
+            const start =
+                routes[routeIndex].features[0].geometry.coordinates[
+                    counter >= steps ? counter - 1 : counter
+                ];
+            const end =
+                routes[routeIndex].features[0].geometry.coordinates[
+                    counter >= steps ? counter : counter + 1
+                ];
+            if (!start || !end) {
+                running = false;
+                document.getElementById('replay').disabled = false;
+                return;
+            }
+
+            const point = map.getSource(currentPointSource)._data;
+            point.features[0].geometry.coordinates = routes[routeIndex].features[0].geometry.coordinates[counter];
+            point.features[0].properties.bearing = turf.bearing(turf.point(start), turf.point(end));
+
+            map.getSource(currentPointSource).setData(point);
+
+            if (counter < steps) {
+                requestAnimationFrame(animatePoint);
+            } else {
+                counter = 0;
+                currentRouteIndex = (currentRouteIndex + 1) % routes.length;
+                routeSources.forEach(source => {
+                    map.setLayoutProperty(source, 'visibility', 'none');
+                });
+                pointSources.forEach(source => {
+                    map.setLayoutProperty(source, 'visibility', 'none');
+                });
+                map.setLayoutProperty(routeSources[currentRouteIndex], 'visibility', 'visible');
+                map.setLayoutProperty(pointSources[currentRouteIndex], 'visibility', 'visible');
+                animate(currentRouteIndex);
+            }
+
+            counter++;
+        }
+
+        map.getSource(currentRouteSource).setData(routes[routeIndex]);
+        const point = map.getSource(currentPointSource)._data;
+        point.features[0].geometry.coordinates = routes[routeIndex].features[0].geometry.coordinates[0];
+        map.getSource(currentPointSource).setData(point);
+
+        animatePoint();
+    }
+</script>
+</body>
+</html>
