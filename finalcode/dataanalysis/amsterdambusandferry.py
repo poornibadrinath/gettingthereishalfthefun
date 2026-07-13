@@ -99,7 +99,7 @@ scatter_trace_B = go.Scattermapbox(
 # Set the map layout
 fig.update_layout(
     mapbox=dict(
-        accesstoken='pk.eyJ1IjoicG9vcm5pLWJhZHJpbmF0aCIsImEiOiJjanUwbmYzc3UwdDI3NGRtZ3kzMTltbWZpIn0.SB9PEksVcEwWvZJ9A7J9uA',
+        accesstoken='pk.eyJ1IjoicG9vcm5pLWJhZHJpbmF0aCIsImEiOiJjbXI0ejAzdHIwY3UxNDhzampibmkwdmtiIn0.jICjb-T8m48aSQX34yc9kw',
         center=dict(lat=52.39, lon=4.89),
         zoom=11,
         style='mapbox://styles/poorni-badrinath/clkkdd0eq00fd01qy03s15boh'
