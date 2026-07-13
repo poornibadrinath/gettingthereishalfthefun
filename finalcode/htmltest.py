@@ -104,7 +104,7 @@ app.layout = html.Div([
             'data': traces + [surface],
             'layout': {
                 'mapbox': {
-                    'accesstoken': 'pk.eyJ1IjoicG9vcm5pLWJhZHJpbmF0aCIsImEiOiJjanUwbmYzc3UwdDI3NGRtZ3kzMTltbWZpIn0.SB9PEksVcEwWvZJ9A7J9uA',
+                    'accesstoken': 'pk.eyJ1IjoicG9vcm5pLWJhZHJpbmF0aCIsImEiOiJjbXI0ejAzdHIwY3UxNDhzampibmkwdmtiIn0.jICjb-T8m48aSQX34yc9kw',
                     'style': 'mapbox://styles/mapbox/light-v10',
                     'center': {'lat': np.mean(lat_coords), 'lon': np.mean(lon_coords)},
                     'zoom': 10,
